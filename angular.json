@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "01_Angular_empty": {
+    "facebook-like": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/01-angular-empty",
+            "outputPath": "dist/facebook-like",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "01_Angular_empty:build:production"
+              "browserTarget": "facebook-like:build:production"
             },
             "development": {
-              "browserTarget": "01_Angular_empty:build:development"
+              "browserTarget": "facebook-like:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "01_Angular_empty:build"
+            "browserTarget": "facebook-like:build"
           }
         },
         "test": {
@@ -94,5 +94,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
